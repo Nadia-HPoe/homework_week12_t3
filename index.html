@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI calculator</h1>
+        <ul> Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and
+            women.
+            <li>Enter your weight and height using standard or metric measures.</li>
+            <li>Select "Calculate" and your BMI will appear below.</li>
+        </ul>
+        <p class="bmi_subtitle">Height</p>
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="bmi_height" oninput="showNumber()">
+            <span id="bmi_height-val">100 cm</span>
+        </div>
+        <p class="bmi_subtitle">Weight</p>
+        <div class="row">
+            <input type="range" min="20" max="200" value="20" id="bmi_weight" oninput="showNumber()">
+            <span id="bmi_weight-val">20 kg</span>
+        </div>
+        <button id="bmi_button">Calculate</button>
+        <p id="bmi_result"></p>
+        <p id="bmi_decsription"></p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
